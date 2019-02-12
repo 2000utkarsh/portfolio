@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	{% block content %}
+
+	<p>Name: {{candidate_name}}</p>
+	<p>About him: {{candidate_about}}</p>
+	<img src="{% static 'profile_pic/zlogo.jpg' %}" alt="profile_pic">
+	<br>
+	<a href="{% static 'resume_pdf/resume.pdf' %}" target="_blank">Resume</a>
+	<br>
+	<a href="{% url 'emails:getReceiver' %}" target="_blank">Get Link</a>
+
+	<h3>Qualifications</h3>
+
+	<ul>
+	    {% for key,value in qualifications_dict.items %}
+	        <li>
+	            <p>
+	                {{key}}:<a href="{{value}}" target="_blank">Click Here</a>
+	            </p>
+	        </li>
+	        
+      	{% endfor %}
+	</ul>
+
+
+	<h3>Projects</h3>
+
+	<ul>
+	    {% for key,value in projects_dict.items %}
+	        <li>
+	            <p>
+	                {{key}}:<a href="{{value}}" target="_blank">Click Here</a>
+	            </p>
+	        </li>
+	        
+      	{% endfor %}
+	</ul>
+
+
+	<h3>Expertise</h3>
+
+	<ul>
+	    {% for exp in expertise_list %}
+	        <li>
+	            <p>
+	                {{exp}}
+	            </p>
+	        </li>
+	        
+      	{% endfor %}
+	</ul>
+
+	
+	<p>Contact: {{candidate_contact}}</p>
+
+
+	{% endblock  %}
+</body>
+</html>
