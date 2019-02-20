@@ -29,6 +29,8 @@ class Qualification(models.Model):
 class Project(models.Model):
 	candidate = models.ForeignKey('Resume',related_name='projects',on_delete=models.CASCADE)
 	name = models.CharField(max_length = 50)
+	image = models.ImageField(upload_to = 'projects/', blank = False)
+	description = models.TextField()
 	link = models.URLField()
 
 	def __str__(self):
