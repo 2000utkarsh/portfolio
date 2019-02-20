@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>hover effects</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
+</head>
+<body>
+
+	<div class="container_card">
+		<section id="portfolio_card">
+			<div class="container_card">
+				<section>
+					<div class="overlay_card">
+						<div class="description_card">
+							<p>
+								{{pro.description}}
+							</p>
+
+
+							<h6>Tools</h6>
+
+							<ul class="tools_card vertical-list_card">
+								<li>{{pro.link}}</li>
+							</ul>
+						</div>
+
+
+
+						<img src="{{ pro.image.url }}">
+
+
+						<h4 class="heading_card">{{pro.name}}</h4>
+					</div>
+				</section>
+		</section>
+	</div>
+
+	<br>
+	<br>
+	<div></div>
+
+
+</body>
+</html>
