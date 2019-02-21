@@ -30,7 +30,7 @@ h6{
 	width: 100px;
 	height: 100px;
 	position: relative;
-	left: 20px;
+	left: 164px;
 	/*left: -500px;*/
 	display: inline;
 }
@@ -139,7 +139,7 @@ h6{
 	width: 1300px;
 	height: 1000px;
 	position: relative;
-	display: block; 
+	display: flex; 
 }
 .master_container{
 	width: 1000px;
@@ -154,13 +154,6 @@ h6{
 	/*background: red;*/
 	width: 1035px;
 	height: 425px;
-	display: inline-flex;
-	margin-bottom: 90px;
+	/*display: inline-flex;*/
 	
-}
-.bundle_residue{
-	position: relative;
-	left: 135px;
-	display: flex;	
-
 }

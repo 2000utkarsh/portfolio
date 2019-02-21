@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 {% load staticfiles %}
+{% load list_index %}
 <html lang="en" >
 
 <head>
@@ -10,223 +11,218 @@
 
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
-	<link rel='stylesheet' href='https://www.vinaypuppal.com/css/Pe-icon-7-stroke.css'>
+	<!-- <link rel='stylesheet' href='https://www.vinaypuppal.com/css/Pe-icon-7-stroke.css'> -->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
-	<link rel="stylesheet" href="{% static "css/style_1.css" %}">
-
-  
+	<link rel="stylesheet" href="{% static 'css/style_1.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
+ 
 </head>
 
 <body>
 
-  <div class="overlay" id="particles"></div>
+  <div class="overlay" id="particles">
+  </div>
+
   {% block content %}
   {% endblock %}
-<div class="home container">
-  <header>
-    <div class="left">
-      <a href="{% url 'credentials:index' %}">{{candidate.name}}</a>
-    </div>
-    <div class="center">
-      <ul>
-        <li><a class='js-open-about' href="#">Qualifications</a>
-        </li>
-        <li><a class='js-open-works' href="#">Expertise</a>
-        </li>
-        <li><a class='js-open-contact' href="#">Projects</a>
-        </li>
-        <li><a class='js-open-link' href="#">Link</a>
-        </li>
-         <li><a class='' href="{% static 'resume_pdf/resume.pdf' %}" target="_blank">Resume</a>
-        </li>
-         <li><a class='' href="{% url 'emails:getReceiver' %}" target="_blank">Drive Link</a>
-        </li>
-      </ul>
-    </div>
-    <div class="right">
-      <ul>
-        <li>
-          <a class='facebook tooltip' title='Facebook'
-          target="_blank" href="https://www.facebook.com/puppalvinay">
-            <i class='fa fa-google-plus'></i>
-          </a>
-        </li>
-        <li>
-          <a class='twitter tooltip' title='Twitter'
-          target="_blank" href="https://twitter.com/vinaypuppal">
-            <i class='fa fa-skype'></i>
-          </a>
-        </li>
-        <li>
-          <a class='linkedin tooltip' title='LinkedIn'
-          target="_blank" href="https://www.linkedin.com/in/vinay-puppal-4514b7104">
-            <i class='fa fa-linkedin'></i>
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </header>
-  <div class="content">
-    <div class="title">
-      <h1>Welcome to My Portfolio!</h1>
-    </div>
-    <ul>
-      <li>
-        <a class='js-open-about' href="#">
-          <i class='pe-7s-user'></i>
-          <span>Qualifications</span>
-        </a>
-      </li>
-      <li>
-        <a class='js-open-works' href="#">
-          <i class='pe-7s-albums'></i>
-          <span>Expertise</span>
-        </a>
-      </li>
-      <li>
-        <a class='js-open-contact' href="#">
-          <i class='pe-7s-chat'></i>
-          <span>Projects</span>
-        </a>
-      </li>
-       <li>
-        <a class='js-open-link' href="#">
-          <i class='pe-7s-chat'></i>
-          <span>Link</span>
-        </a>
-      </li>
-       <li>
-        <a class='' href="{% static 'resume_pdf/resume.pdf' %}" target="_blank">
-          <i class='pe-7s-chat'></i>
-          <span>Resume</span>
-        </a>
-      </li>
-       <li>
-        <a class="" href="{% url 'emails:getReceiver' %}" target="_blank">
-          <i class='pe-7s-chat'></i>
-          <span>Drive Link</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <footer>
-    <p> {{candidate.name}} &copy; 2019</p>
-    <p> Contact: {{candidate.contact}}</p>
-  </footer>
-</div>
 
-<div class="about container">
-  <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i>
-  </a>
-  <div class="top">
-    <div class="left">
-      <div class="avatar">
-        <img src="{% static 'profile_pic/pic.jpg' %}"
-        alt="avatar" />
+
+
+  <div class="home container">
+    <header>
+      <div class="left">
+        <a href="{% url 'credentials:index' %}">{{candidate.name}}</a>
       </div>
-      
-	        <table>
+      <div class="center">
+        <ul>
+          <li><a class='js-open-about' href="#">Qualifications</a></li>
+          <li><a class='js-open-works' href="#">Expertise</a></li>
+          <li><a class='js-open-contact' href="#">Projects</a></li>
+          <li><a class='js-open-link' href="#">Link</a></li>
+          <li><a class='' href="{% static 'resume_pdf/resume.pdf' %}" target="_blank">Resume</a></li>
+          <li><a class='' href="{% url 'emails:getReceiver' %}" target="_blank">Drive Link</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a class='facebook tooltip' title='Facebook'target="_blank" href="">
+              <i class='fa fa-google-plus'></i>
+            </a>
+          </li>
+          <li>
+            <a class='twitter tooltip' title='Twitter'target="_blank" href="">
+              <i class='fa fa-skype'></i>
+            </a>
+          </li>
+          <li>
+            <a class='linkedin tooltip' title='LinkedIn'target="_blank" href="">
+              <i class='fa fa-linkedin'></i>
+            </a>
+          </li>  
+        </ul>
+      </div>
+    </header>
 
-	    {% for qual in qualifications %}
-	        	<tr>
-<!-- 		        <li>
- -->		                <td><span class="key_tags">{{qual.name}}</span></td>:<td><a href="{{qual.link}}" target="_blank" class="key_links">Click Here</a></td>
-<!-- 		        </li>
- -->		    </tr>
-	        
-      	{% endfor %}
-		    </table>
 
-
-
-	<!-- </ul> -->
+    <div class="content">
+      <div class="title">
+        <h1>Welcome to My Portfolio!</h1>
+      </div>
+      <ul>
+        <li>
+          <a class='js-open-about' href="#">
+            <i class='pe-7s-user'></i>
+            <span>Qualifications</span>
+          </a>
+        </li>
+        <li>
+          <a class='js-open-works' href="#">
+            <i class='pe-7s-albums'></i>
+            <span>Expertise</span>
+          </a>
+        </li>
+        <li>
+          <a class='js-open-contact' href="#">
+            <i class='pe-7s-chat'></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class='js-open-link' href="#">
+            <i class='pe-7s-chat'></i>
+            <span>Link</span>
+          </a>
+        </li>
+        <li>
+          <a class='' href="{% static 'resume_pdf/resume.pdf' %}" target="_blank">
+            <i class='pe-7s-chat'></i>
+            <span>Resume</span>
+          </a>
+        </li>
+        <li>
+          <a class="" href="{% url 'emails:getReceiver' %}" target="_blank">
+            <i class='pe-7s-chat'></i>
+            <span>Drive Link</span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <div class="intro right">
-      <h1>A Little About Me</h1>
-      <p>
-        {{candidate.about}}
-      </p>
 
+
+
+    <footer>
+      <p> {{candidate.name}} &copy; 2019</p>
+      <p> Contact: {{candidate.contact}}</p>
+    </footer>
+  </div>
+
+
+
+  <div class="about container">
+    <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i></a>
+    <div class="top">
+      <div class="left">
+        <div class="avatar">
+          <img src="{% static 'profile_pic/pic.jpg' %}" alt="avatar" />
+        </div>
+        
+        <table>
+          {% for qual in qualifications %}
+            <tr>	                
+              <td>
+                <span class="key_tags">{{qual.name}}</span></td>:<td><a href="{{qual.link}}" target="_blank" class="key_links">Click Here</a></td>
+    		    </tr>   
+          {% endfor %}
+  		  </table>
+      </div>
+      <div class="intro right">
+        <h1>A Little About Me</h1>
+        <p>
+          {{candidate.about}}
+        </p>
+      </div>
     </div>
   </div>
 
-</div>
-<div class="works container">
-  <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i>
-  </a>
-  <div class="header">
-    <h1 class="expertise">Expertise</h1>
-    	<ul class="ul_list_items">
-	    {% for exp in expertise %}
-	        <li class="list_items">
-	            <p>
-	                {{exp.message}}
-	            </p>
-	        </li>
-	        
-      	{% endfor %}
-	</ul>
-   
-  </div>
-</div>
 
-
-
-
-<div class="contact container">
-  <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i>
-  </a>
-  <div class="content">
-    <div class="left">
-      <h1>Projects</h1>
-	    {% for pro in projects %}
-                  {% include '_projects.html' %}
-	        
-      {% endfor %}
+  <div class="works container">
+    <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i>
+    </a>
+    <div class="header">
+      <h1 class="expertise">Expertise</h1>
+      	<ul class="ul_list_items">
+  	    {% for exp in expertise %}
+  	        <li class="list_items">
+  	            <p>
+  	                {{exp.message}}
+  	            </p>
+  	        </li>
+  	        
+        	{% endfor %}
+  	</ul>
      
     </div>
-    <div class="right">
-      <div class="map">
-        <!-- <iframe width='100%' height='500px' frameBorder='0'
-        src='https://a.tiles.mapbox.com/v4/vinaypuppal.0a7kk78j/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoidmluYXlwdXBwYWwiLCJhIjoiMGgxeFhtZyJ9.wEi2lq3qvGs7CAJp-x_KbQ'></iframe> -->
+  </div>
+
+
+
+
+  <div class="contact container">
+    <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i></a>
+    <div class="content">
+      <div class="left">
+        <h1 class="project_heading">Projects</h1>
+
+
+        <div class="master_container">
+          <div class="container_card_outer">
+              <section id="portfolio_card">
+                  <div class="container_card_inner">
+                      {% for outer_counter in projects_count %}
+                      <div class="bundle_three">
+                        {% for inner_counter in three %}
+                          {% include '_projects.html' %}  
+                        {% endfor %}
+                      </div>
+                      {% endfor %}
+
+                      <div class="bundle_residue">
+                      {% for counter in projects_residue %}
+                          {% include '_projects.html' %}  
+                      {% endfor %}
+                      </div>
+
+                  </div>
+              </section>
+          </div>
+        </div>
+
+
       </div>
+    </div>
+    <footer>
+      <p> {{candidate.about}} &copy; 2019</p>
+    </footer>
+  </div>
+
+  <div class="link container">
+    <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i></a>
+    <div class="header_link">
+      <h1>Link</h1>
     </div>
   </div>
 
-
-
-
-
-
-  <footer>
-    <p> {{candidate.about}} &copy; 2019</p>
-  </footer>
-</div>
-
-<div class="link container">
-  <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i>
-  </a>
-  <div class="header_link">
-    <h1>Link</h1>
-    
+  <div class="backstreach" id="backstreach">
   </div>
- </div>
 
-<div class="backstreach" id="backstreach"></div>
+
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/3.2.3/sweetalert2.min.js'></script>
-
-  
-
-    <script  src="{% static 'js/index.js' %}"></script>
-
-
-
-
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/3.2.3/sweetalert2.min.js'></script>
+  <script src="{% static 'js/index.js' %}"></script>
 </body>
 
 </html>
