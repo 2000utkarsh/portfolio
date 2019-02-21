@@ -7,9 +7,12 @@
 					{{forloop.parentloop.counter0|multiply:3|add:forloop.counter0|get_from_list:projects_list|get_value:'description'}}
 				</p>
 
-				<ul class="tools_card vertical-list_card">
-					<li><a href="{{forloop.parentloop.counter0|multiply:3|add:forloop.counter0|get_from_list:projects_list|get_value:'link'}}" target="_blank">Click Here</a></li>
-				</ul>
+				<div class="ul_div">
+					<ul class="tools_card vertical-list_card">
+						<li style="position: relative; top: 30px;"><a href="{{forloop.parentloop.counter0|multiply:3|add:forloop.counter0|get_from_list:projects_list|get_value:'link'}}" target="_blank"><button class="click_here">Click Here</button></a></li>
+
+					</ul>
+				</div>
 			</div>
 
 
@@ -29,7 +32,7 @@
 				</p>
 
 				<ul class="tools_card vertical-list_card">
-					<li><a href="{{projects.count|subtract:forloop.counter0|subtract:1|get_from_list:projects_list|get_value:'link'}}" target="_blank">Click Here</a></li>
+					<li><a href="{{projects.count|subtract:forloop.counter0|subtract:1|get_from_list:projects_list|get_value:'link'}}" target="_blank"><button>Click Here</button></a></li>
 				</ul>
 			</div>
 

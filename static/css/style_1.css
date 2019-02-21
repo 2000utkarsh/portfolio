@@ -631,11 +631,12 @@ input:checked + label{
   color: #444;
 }
 .container.contact h1 {
-  color: #000;
+  color: #fff;
   text-align: center;
   position: relative;
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 800;
+  top: -50px;
 
 }
 .container.contact p {
@@ -666,12 +667,13 @@ input:checked + label{
   width: 50%;
   margin: 0 auto;
   text-align: center;
+
 }
 .container.contact .content ul li {
   margin: 10px;
 }
 .container.contact .content ul li a {
-  font-size: 28px;
+  font-size: 16px;
   color: #00bcd4;
   transition: all 0.2s;
 }
@@ -689,6 +691,9 @@ input:checked + label{
 }
 .container.contact.open {
   top: 60px;
+  background-image: url('../images/projects/projects_bg.png');
+  background-size: 1200px 500px;
+  /*background: no-repeat; */
 }
 .container.contact.open footer {
   display: none;
@@ -767,6 +772,20 @@ input:checked + label{
   top: 60px;
 }
 
+/*.overlay_projects {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  display: block;
+  z-index: 1;
+  transition: opacity 0.2s ease-in;
+  background: rgba(45,49,49,0.77);
+  transition: rgba(45,49,49,0.77) all 0.5 ease-in;
+}
+*/
 
 
 
