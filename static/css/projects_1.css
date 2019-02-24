@@ -1,0 +1,225 @@
+/**{
+	padding: 0;
+	margin: 0; 
+}*/
+body{
+	overflow-x: infinite;
+}
+
+li{
+	list-style: none;
+}
+h4{
+	font-size: 92%;
+}
+h6{
+	color: #696969;
+}
+.vertical-list_card li{
+	/*float: left;*/
+	position: relative;
+	height: 65px;
+}
+.ul_div{
+	width: 250px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+.overlay_card{
+	background: rgba(45,49,49,0.77);
+	height: 300px;
+	width: 300px;
+	padding-bottom: 80px; 
+}
+#portfolio_card{
+	background: #423a3a;
+	padding-bottom: 80px;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	left: 20px;
+	/*left: -500px;*/
+	display: inline;
+}
+#portfolio_card .heading_card{
+	color: #f0f0f0;
+	padding: 15px;
+	text-align: center;
+	position: absolute;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+#portfolio_card .description_card{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px;
+}
+#portfolio_card .description_card > * {
+	display: none;
+	font-size: 72%;
+}
+#portfolio_card p{
+	color: #f0f0f0;
+	margin-bottom: 30px;
+	line-height: 230%;
+	position: relative;
+	top: -100px;
+}
+
+#portfolio_card div section{
+	/*cursor: pointer;*/
+	/*width: 325px;*/
+}
+#portfolio_card div:nth-child(odd) section{
+	background: #483f3f;
+	padding: 10px;
+	border: 3px solid #4d4343;
+}
+
+#portfolio_card div:nth-child(even) section{
+	background: #3d3636;
+	padding: 10px;
+	border: 3px solid #393333;
+}
+#portfolio_card img{
+	margin-bottom: 20px;
+	height: 300px;
+	width: 100%;
+}
+#portfolio_card .overlay_card{
+	position: relative;
+	padding-bottom: 0;
+	min-height: 400px;
+	overflow: hidden;
+}
+#portfolio_card .description_card h4{
+	color: #fff;
+}
+#portfolio_card .heading_card{
+	position: relative;
+	margin: 0 auto;
+	/*background: red;*/	
+}
+#portfolio_card section{
+	/*width: 10%;*/
+	margin-bottom: 100px;
+	/*float: left;*/
+}
+#portfolio_card section:hover .overlay_card img{
+	opacity: 0;
+	transition: opacity 0.32s;
+}
+#portfolio_card section:hover .description_card{
+	top: 140px;
+	transition: top 0.5s;
+	font-size: 32px;
+}
+#portfolio_card section:hover .description_card p{
+	text-align: justify;
+}
+#portfolio_card section:hover .overlay_card .description_card > *{
+	display: block;
+}
+#portfolio_card section:hover .overlay_card .heading_card{
+	position: absolute;
+	top: 0px;
+	transition: top 0.9s;
+	width: 100%;
+}
+.container_card_outer{
+	width: 1000px;
+	position: relative;
+	display: block; 
+}
+.container_card_inner{
+	width: 1300px;
+	height: 1000px;
+	position: relative;
+	display: block; 
+}
+.master_container{
+	width: 1000px;
+}
+.repeating_section{
+	width: 325px;
+	height: 425px;
+	display: block;
+	margin-right: 30px; 
+}
+.bundle_three{
+	/*background: red;*/
+	width: 1035px;
+	height: 425px;
+	display: inline-flex;
+	margin-bottom: 90px;	
+}
+.bundle_residue{
+	position: relative;
+	left: 135px;
+	display: flex;	
+
+}
+
+
+
+
+/* Button Tabs*/
+/* button {
+  border: none;
+  background: rgba(255, 117, 16);
+  color: #f2f2f2;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  position: relative; 
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  margin-bottom: 16px; 
+  margin-right: 16px;
+  display: inline;
+  width: 110px;
+  text-decoration: none;
+  height: 41px;
+  left: -20px;
+  cursor: pointer;
+
+}
+
+ button:before {
+  content:'';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 42px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+
+ button:hover:before {
+  width: 100%;
+}
+*/
+@media(max-width: 767px){
+
+		#portfolio_card{
+		background: #423a3a;
+		padding-bottom: 80px;
+		width: 100px;
+		height: 100px;
+		position: relative;
+		left: -200px;
+		/*left: -500px;*/
+		display: block;
+	}
+		.bundle_three{
+		/*background: red;*/
+		width: 1035px;
+		height: 425px;
+		display: block;
+		margin-bottom: 90px;	
+	}
+}

@@ -1,3 +1,342 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+  <title>PORTFOLIO</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+  <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript" src="{% static 'new/index.js' %}"></script>
+
+  <link rel="stylesheet" type="text/css" href="{# static 'css/projects_1.css' }">
+  <link rel="stylesheet" type="text/css" href="{% static 'new/style.css' %}">
+</head>
+<body>
+
+  <div class="main">
+    <div class="perm_header">
+      <div class="row">
+        <div class="col-3" align="left" >
+          <div class="perm_header_left">{{candidate.name}}</div>
+        </div>
+        <div class="col-6" align="center" >
+          <div class="perm_header_center trans">
+            <div class="row">
+              <div class="col-3" align="center" style="">
+              <a class="js-open-main_tab_1" href="#"><button>Qualifications</button></a>
+              </div>
+              <div class="col-3" align="center" style="">
+              <a class="js-open-main_tab_2" href="#"><button>Expertise</button></a>
+              </div>
+              <div class="col-3" align="center" style="">
+              <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
+              </div>
+              <div class="col-3" align="center" style="">
+              <a class="js-open-main_tab_4" href="#"><button>Arbitrary</button></a>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="col-3" align="right" >
+          <div class="perm_header_right">
+            <div class="row">
+              <div class="col-4" >
+              </div>
+              <div class="col-3">
+                <a href="#"><button>Resume</button></a>
+              </div>
+              <div class="col-1">
+              </div>
+              <div class="col-3">
+                <a href="#"><button>Drive</button></a>
+              </div>
+              <div class="col-1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <center>
+      <div class="main_content">
+        <div class="row main_content_row">
+          <div class="col-2" align="left" >
+          </div>
+          <div class="col-8" align="center" >
+            
+            <div class="welcome_text row">
+              <div class="col-12">
+                <center>Welcome To My Portfolio!!</center>
+              </div>            
+            </div>
+
+            <div class="tab_links trans">
+              <div class="row">
+                <div class="col-3 tab_link_single trans" align="center" style="">
+                <a class="js-open-main_tab_1" href="#"><button>Qualifications</button></a>
+                </div>
+                <div class="col-3 tab_link_single trans" align="center" style="">
+                <a class="js-open-main_tab_2" href="#"><button>Expertise</button></a>
+                </div>
+                <div class="col-3 tab_link_single trans" align="center" style="">
+                <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
+                </div>
+                <div class="col-3 tab_link_single trans" align="center" style="">
+                <a class="js-open-main_tab_4" href="#"><button>Arbitrary</button></a>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="col-2" align="right" >
+          </div>
+        </div>
+      </div>
+    </center>
+
+
+    <div class="footer">
+      <div class="row">
+        <div class="col-4" align="left" >
+          <div class="footer_left">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-1">
+                <i class="fab fa-facebook-square"></i>
+              </div>
+              <div class="col-1">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="col-1">
+                <i class="fab fa-twitter-square"></i>
+              </div>
+              <div class="col-1">
+                <i class="fab fa-github-square"></i>
+              </div>
+              <div class="col-7"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4" align="center" >
+          <div class="footer_center">
+            &copy; 2019
+          </div>
+        </div>
+        <div class="col-4" align="right" >
+          <div class="footer_right">
+            <div class="row">
+              <div class="col-11">
+                Contact: 99586xxxxx
+              </div>
+              <div class="col-1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="all_tabs main_tab_1">
+    <div class="tab_1_header">
+      <div class="row">
+        <div class="col-12" align="center" >
+          <div class="tab_1_text">QUALIFICATIONS</div>
+        </div>        
+      </div>
+    </div>
+
+    <div class="tab_1_content">
+      <div class="row row_tab_content">
+        <div class="col-2" align="left" >
+        </div>
+        <div class="col-8" align="center" > 
+          <div class="row">
+            <div class="col-4 card">
+              sample text
+            </div>
+            <div class="col-4 card">
+              sample text
+            </div>
+            <div class="col-4 card">
+              sample text
+            </div>
+          </div>
+        </div>
+        <div class="col-2" align="right" >
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="all_tabs main_tab_2">
+    <div class="tab_2_header">
+      <div class="row">
+        <div class="col-12" align="center" >
+          <div class="tab_2_text">EXPERTISE</div>
+        </div>        
+      </div>
+    </div>
+
+    <div class="tab_2_content">
+      <div class="row row_tab_content">
+        <div class="col-2" align="left" >
+        </div>
+        <div class="col-8" align="center" >
+          <div class="row">
+            <div class="col-4 card">
+              sample text
+            </div>
+            <div class="col-4 card">
+              sample text
+            </div>
+            <div class="col-4 card">
+              sample text
+            </div>
+          </div>
+        </div>
+        <div class="col-2" align="right" >
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="all_tabs main_tab_3">
+    <div class="tab_3_header">
+      <div class="row">
+        <div class="col-12" align="center" >
+          <div class="tab_3_text">PROJECTS</div>
+        </div>        
+      </div>
+    </div>
+
+    <div class="tab_3_content">
+      <div class="row row_tab_content">
+        <div class="col-2" align="left" >
+        </div>
+        <div class="col-8" align="center" >
+          <div class="row">
+            {% for pro in projects %}
+            <div class="col-4 card">
+              {% include '_projects.html' %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="col-2" align="right" >
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <div class="all_tabs main_tab_4">
+    <div class="tab_4_header">
+      <div class="row">
+        <div class="col-12" align="center" >
+          <div class="tab_4_text">ARBITRARY</div>
+        </div>        
+      </div>
+    </div>
+
+    <div class="tab_4_content">
+      <div class="row row_tab_content">
+        <div class="col-2" align="left" >
+        </div>
+        <div class="col-8" align="center" >
+          <div class="row">
+            <div class="col-4 card">
+              sample text
+            </div>
+            <div class="col-4 card">
+              sample text
+            </div>
+            <div class="col-4 card">
+              sample text
+            </div>
+          </div>
+        </div>
+        <div class="col-2" align="right" >
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %}
+
 
 <!DOCTYPE html>
 {% load staticfiles %}
@@ -14,8 +353,8 @@
 	<!-- <link rel='stylesheet' href='https://www.vinaypuppal.com/css/Pe-icon-7-stroke.css'> -->
 	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
-	<link rel="stylesheet" href="{% static 'css/style_1.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/projects_1.css' %}">
  
 </head>
 
@@ -175,18 +514,23 @@
       <div class="left">
         <h1 class="project_heading">Projects</h1>
 
-
+      
         <div class="master_container">
           <div class="container_card_outer">
               <section id="portfolio_card">
                   <div class="container_card_inner">
+
+                    <center>
                       {% for outer_counter in projects_count %}
                       <div class="bundle_three">
                         {% for inner_counter in three %}
                           {% include '_projects.html' %}  
-                        {% endfor %}
+                          {% endfor %}
                       </div>
-                      {% endfor %}
+                        {% endfor %}
+                    </center>
+
+                     
 
                       <div class="bundle_residue">
                       {% for counter in projects_residue %}
@@ -198,6 +542,7 @@
               </section>
           </div>
         </div>
+
 
 
       </div>
@@ -227,6 +572,8 @@
 </body>
 
 </html>
+
+{% endcomment %}
 
 
 
