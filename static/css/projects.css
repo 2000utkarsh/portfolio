@@ -28,8 +28,8 @@ h6{
 }
 .overlay_card{
 	background: rgba(45,49,49,0.77);
-	height: 300px;
-	width: 300px;
+	height: 100%;
+	width: 100%;
 	padding-bottom: 80px; 
 }
 #portfolio_card{
@@ -166,7 +166,7 @@ h6{
 
 
 /* Button Tabs*/
- button {
+/* button {
   border: none;
   background: rgba(255, 117, 16);
   color: #f2f2f2;
@@ -201,44 +201,5 @@ h6{
 
  button:hover:before {
   width: 100%;
-}
+}*/
 
-@media(max-width: 767px){
-
-		#portfolio_card{
-		background: #423a3a;
-		padding-bottom: 80px;
-		width: 100px;
-		height: 100px;
-		position: relative;
-		left: -200px;
-		/*left: -500px;*/
-		display: block;
-	}
-		.bundle_three{
-		/*background: red;*/
-		width: 1035px;
-		height: 425px;
-		display: block;
-		margin-bottom: 90px;	
-	}
-}
-@media only screen and (max-width: 330px){
-		#portfolio_card{
-		background: #423a3a;
-		padding-bottom: 80px;
-		width: 100px;
-		height: 100px;
-		position: relative;
-		left: 0px;
-		/*left: -500px;*/
-		display: block;
-	}
-		.bundle_three{
-		/*background: red;*/
-		width: 1035px;
-		height: 425px;
-		display: block;
-		margin-bottom: 90px;	
-	}
-}
