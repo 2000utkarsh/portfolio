@@ -143,6 +143,7 @@ a{
 }
 
 .main_tab_1.open, .main_tab_2.open, .main_tab_3.open, .main_tab_4.open{
+	display: block;
 	position: absolute;
 	top: 70px;
 	width: 100%;
@@ -186,9 +187,4 @@ button:hover:before {
 }
 button:focus { 
 	outline: none; 
-}
-
-
-.all_tabs{
-	overflow-y: hidden;
 }
