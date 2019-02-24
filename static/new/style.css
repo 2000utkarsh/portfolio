@@ -1,7 +1,7 @@
 html,body{
 	font-family: 'Merriweather' ,sans-serif;
 	overflow-x: hidden;
-	/*overflow-y: hidden;*/
+	overflow-y: auto;
 	color: #fff;
 }
 
@@ -186,4 +186,9 @@ button:hover:before {
 }
 button:focus { 
 	outline: none; 
+}
+
+
+.all_tabs{
+	overflow-y: hidden;
 }
