@@ -116,3 +116,11 @@ $(document).ready(function(){
 
 
 });
+
+
+function appearModal(){
+	var url = window.location.href;
+	if(url.includes('getReceiver')){
+		document.getElementById('modalButton').click();
+	}
+}

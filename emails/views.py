@@ -20,4 +20,4 @@ def getReceiver(request):
 			return HttpResponse("Oops! Something went wrong. Please try again")
 	else:
 		form = forms.ReceiverForm()
-		return render(request, 'email_form.html', {'form':form})
+		return render(request, 'index.html', {'form':form})

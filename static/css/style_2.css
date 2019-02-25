@@ -159,6 +159,9 @@ a{
 	padding-right: 20px; 
 }
 
+#formModal .modal-header, .modal-body{
+	color: #000;
+}
 
 
 

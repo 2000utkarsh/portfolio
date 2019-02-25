@@ -17,10 +17,10 @@
   <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 
   <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/style_1.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style_2.css' %}">
 </head>
 
-<body>
+<body onload="appearModal()">
   <div class="main">
     <div class="perm_header">
       <div class="row">
@@ -56,7 +56,7 @@
               <div class="col-1">
               </div>
               <div class="col-3">
-                <a href="{% url 'emails:getReceiver' %}" target="_blank"><button>Drive</button></a>
+                <a href="{% url 'emails:getReceiver' %}"><button>Drive</button></a>
               </div>
               <div class="col-1">
               </div>
@@ -77,6 +77,7 @@
             <div class="welcome_text row">
               <div class="col-12">
                 <center>Welcome To My Portfolio!!</center>
+                <button data-toggle="modal" data-target="#formModal" id="modalButton" hidden></button>
               </div>            
             </div>
 
@@ -269,6 +270,26 @@
     </div>
   </div>
 
+
+  <div class="modal fade" id="formModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Get Drive Link</h5>
+          <a href="{% url 'credentials:index' %}"><button type="button" class="close"><span>&times;</span></button></a>
+        </div>
+        <div class="modal-body">
+          <p>Please enter your Email ID to get the drive link</p>
+          <form action="{% url 'emails:getReceiver' %}" method="POST">
+            {% csrf_token %}
+            <label>Email ID :&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            {{form.email_id}}&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" name="Submit" value="Get Link">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
