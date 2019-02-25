@@ -13,7 +13,7 @@ a{
 /* FRONT PAGE STYLING */
 
 .main{
-	background: url('main_background.jpeg');
+	background: url('../images/main_background.jpeg');
 	opacity: 0.9;
 }
 .main .perm_header .row{
@@ -148,7 +148,7 @@ a{
 	position: absolute;
 	top: 70px;
 	width: 100%;
-	background: url('tab_background.jpeg');
+	background: url('../images/tab_background.jpeg');
 	background-size: 1550px 722px;
 }
 
