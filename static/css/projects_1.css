@@ -5,7 +5,9 @@
 }
 .card {
 	margin-bottom: 50px;
-	background: rgba(45,49,49,0.77);
+	/*background: rgba(45,49,49,0.77);*/
+	/*background: linear-gradient(to bottom, rgba(255, 45, 99) 20%, rgb(249, 162, 143) 90%);*/
+	background: #e8634e;
 	height: 400px;
 }
 .card .overlay_card .heading_card{
@@ -52,5 +54,4 @@
 	height:378px;
 	opacity: 1;
 }
-
 
