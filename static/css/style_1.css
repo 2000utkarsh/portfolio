@@ -2,7 +2,7 @@ html,body{
 	font-family: 'Merriweather' ,sans-serif;
 	overflow-x: hidden;
 	overflow-y: auto;
-	color: #fff;
+	color: #000;
 }
 
 
@@ -13,8 +13,8 @@ a{
 /* FRONT PAGE STYLING */
 
 .main{
-	background: url('../images/main_background.jpeg');
-	opacity: 0.9;
+	/*background: url('../images/main_back.jpg');*/
+	background: #e5e2d3;
 }
 .main .perm_header .row{
 	height: 70px; 
@@ -27,7 +27,7 @@ a{
 	font-size: 32px;
 }
 .main .perm_header .row .perm_header_left .name_a{
- 	color: #fff;
+ 	color: #000;
 }
 .main .perm_header .row .perm_header_right{
 	padding-right: 20px;
@@ -106,7 +106,9 @@ a{
 .main_tab_1 .tab_1_content .row.row_tab_content{
 	min-height: 602px;
 }
-
+.main_tab_1 .tab_1_content .row.row_tab_content .item_row{
+	width: 280px;
+}
 /* TAB 2  */
 
 .main_tab_2 .tab_2_header .row{
@@ -118,6 +120,9 @@ a{
 }
 .main_tab_2 .tab_2_content .row.row_tab_content{
 	min-height: 602px;
+}
+.main_tab_2 .tab_2_content .row.row_tab_content .item_row{
+	width: 280px;
 }
 
 /* TAB 3  */
@@ -133,6 +138,10 @@ a{
 	min-height: 602px;
 }
 
+.main_tab_3 .tab_3_content .row.row_tab_content .item_row{
+	width: 280px;
+}
+
 /* TAB 4  */
 
 .main_tab_4 .tab_4_header .row{
@@ -146,12 +155,17 @@ a{
 	min-height: 602px;
 }
 
+.main_tab_4 .tab_4_content .row.row_tab_content .item_row{
+	width: 280px;
+}
+
 .main_tab_1.open, .main_tab_2.open, .main_tab_3.open, .main_tab_4.open{
 	display: block;
 	position: absolute;
 	top: 70px;
 	width: 100%;
-	background: url('../images/tab_background.jpeg');
+	/*background: url('../images/tab_background.jpeg');*/
+	background: #e5e2d3;
 	background-size: 1550px 722px;
 }
 
@@ -167,7 +181,7 @@ a{
 
 button {
   border: none;
-  background: rgba(139, 13, 13);
+  background: rgba(0,0,0, 1);
   color: #f2f2f2;
   padding: 10px;
   font-size: 18px;
