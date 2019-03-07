@@ -52,7 +52,7 @@
 .card .overlay_card:hover .description_card{
 	position: absolute;
 	top: 20px;
-	width: 86.25%;
+	width: 85%;
 	height:378px;
 	opacity: 1;
 	/*margin-left: 17px;*/

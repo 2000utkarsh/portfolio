@@ -52,8 +52,30 @@
 .card .overlay_card:hover .description_card{
 	position: absolute;
 	top: 20px;
-	width: 86.25%;
+	width: 85.5%;
 	height:378px;
 	opacity: 1;
+	/*margin-left: 17px;*/
 }
 
+.owl-carousel .owl-dot{
+	display: none !important;
+}
+
+.fas.fa-chevron-left{
+	font-size: 96px;
+	margin-right: 350px;
+}
+
+.fas.fa-chevron-right{
+	font-size: 96px;
+	margin-left: 350px;
+}
+.owl-prev:hover{
+	background: none !important;
+	color: #000 !important; 
+}
+.owl-next:hover{
+	background: none !important;
+	color: #000 !important; 
+}

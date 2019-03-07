@@ -13,19 +13,19 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/projects_1.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-
 </head>
 
 <body onload="appearModal()">
   <div class="main">
-    <div class="perm_header">
-      <div class="row">
-        <div class="col-3" align="left" >
+    <div class="perm_header" align="right">
+
+      <div class="row perm_header_row">
+        <div class="col-lg-3 col-sm-6" align="left" >
           <div class="perm_header_left"><a href="{% url 'credentials:index' %}" class="name_a">{{candidate.name}}</a></div>
         </div>
-        <div class="col-6" align="center" >
+        <div class="col-lg-6 col-sm-0" align="center" >
           <div class="perm_header_center trans">
             <div class="row">
               <div class="col-3" align="center" style="">
@@ -38,22 +38,22 @@
               <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
               </div>
               <div class="col-3" align="center" style="">
-              <a class="js-open-main_tab_4" href="#"><button>Arbitrary</button></a>
+              <a class="js-open-main_tab_4" href="#"><button>Vision</button></a>
               </div>  
             </div>
           </div>
         </div>
-        <div class="col-3" align="right" >
+        <div class="col-lg-3 col-sm-6" align="right" >
           <div class="perm_header_right">
             <div class="row">
-              <div class="col-4" >
+              <div class="col-lg-4 col-sm-1" >
               </div>
-              <div class="col-3">
+              <div class="col-lg-3 col-sm-4">
                 <a href="{% static 'resume_pdf/resume.pdf' %}" target="_blank"><button>Resume</button></a>
               </div>
               <div class="col-1">
               </div>
-              <div class="col-3">
+              <div class="col-lg-3 col-sm-5">
                 <a href="{% url 'emails:getReceiver' %}"><button>Drive</button></a>
               </div>
               <div class="col-1">
@@ -61,6 +61,30 @@
             </div>
           </div>
         </div>
+      </div>
+
+
+
+
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_1"><span>01</span>Qualifications</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_2"><span>02</span>Expertise</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_3"><span>03</span>Projects</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_4"><span>04</span>Vision & Mission</a></li>
+            <li class="navigation__item"><a href="{% static 'resume_pdf/resume.pdf' %}" onclick="close_btn()" target="_blank" class="navigation__link"><span>05</span>Resume</a></li>
+            <li class="navigation__item"><a href="{% url 'emails:getReceiver' %}" onclick="close_btn()" class="navigation__link"><span>06</span>Drive Link</a></li>
+
+          </ul>
+        </nav>
       </div>
     </div>
 
@@ -91,7 +115,7 @@
                 <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
-                <a class="js-open-main_tab_4" href="#"><button>Arbitrary</button></a>
+                <a class="js-open-main_tab_4" href="#"><button>Vision</button></a>
                 </div>  
               </div>
             </div>
@@ -162,13 +186,13 @@
           <div class="row owl-carousel owl-theme">
             {% for qual in qualifications %}
             <!-- <div class="col-lg-4 col-md-6 col-xs-12"> -->
-              <div class="row item_row">
-                <div class="col-11 card">
+              <!-- <div class="row item_row"> -->
+                <div class="col-12 card">
                   {% include '_qualifications.html' %}
                 </div>
-                <div class="col-1">
-                </div>
-              </div>
+               <!--  <div class="col-1">
+                </div> -->
+              <!-- </div> -->
             <!-- </div> -->
             {% endfor %}
           </div>
@@ -198,13 +222,14 @@
           <div class="row owl-carousel owl-theme">
             {% for exp in expertise %}
             <!-- <div class="col-lg-4 col-md-6 col-xs-12"> -->
-              <div class="row item_row">
-                <div class="col-11 card item">
-                  {% include '_expertise.html' %}
-                </div>
+              <!-- <div class="row item_row"> -->
                 <!-- <div class="col-1">
                 </div> -->
-              </div>
+                <div class="col-12 card item">
+                  {% include '_expertise.html' %}
+                </div>
+                
+              <!-- </div> -->
             <!-- </div> -->
             {% endfor %}
           </div>
@@ -234,13 +259,13 @@
           <div class="row owl-carousel owl-theme">
               {% for pro in projects %}     
               <!-- <div class="col-lg-4 col-md-6 col-xs-12"> -->
-                <div class="row item_row">
-                  <div class="col-11 card item">
+                <!-- <div class="row item_row"> -->
+                  <div class="col-12 card item">
                     {% include '_projects.html' %}
                   </div>
                   <!-- <div class="col-1">
                   </div> -->
-                </div>
+                <!-- </div> -->
               <!-- </div> -->
               {% endfor %}
           </div>
@@ -257,7 +282,7 @@
     <div class="tab_4_header">
       <div class="row">
         <div class="col-12" align="center" >
-          <div class="tab_4_text">ARBITRARY</div>
+          <div class="tab_4_text">Vision</div>
         </div>        
       </div>
     </div>
@@ -317,6 +342,7 @@
       loop:true,
       margin:10,
       nav:true,
+      navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
       responsive:{
         0: {
           items: 1
@@ -335,7 +361,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-  <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/index_1.js' %}"></script>
 </body>
 
 </html>

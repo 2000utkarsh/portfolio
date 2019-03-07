@@ -19,6 +19,12 @@ a{
 .main .perm_header .row{
 	height: 70px; 
 }
+.main .perm_header .perm_header_row{
+	visibility: visible;
+}
+.main .perm_header .navigation{
+	visibility: hidden;
+}
 .main .perm_header .row .perm_header_left, .perm_header_center, .perm_header_right{
 	padding-top: 10px;
 }
@@ -94,7 +100,7 @@ a{
 	position: relative;
 	top: 100%;
 	transition: all 0.5s linear;
-	padding-bottom: 200px;
+	padding-bottom: 0px;
 }
 .main_tab_1 .tab_1_header .row{
 	height: 120px;
@@ -156,6 +162,7 @@ a{
 	background-size: 1550px 722px;
 }
 
+
 .card{
 	padding-right: 20px; 
 }
@@ -181,7 +188,7 @@ button {
   display: block;
 }
 
-button:before {
+/*button:before {
   content:'';
   position: absolute;
   top: 0px;
@@ -192,7 +199,7 @@ button:before {
   border-radius: 10px;
   border: none;
   transition: all 1s ease;
-}
+}*/
 
 button:hover:before {
   width: 100%;
@@ -200,6 +207,143 @@ button:hover:before {
 button:focus { 
 	outline: none; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation__checkbox {
+  display: none; 
+}
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background: #e5e2d3;
+  z-index: 1000;
+  transition: transform 0s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  transition: all .4s; }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #55c57a;
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .8s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 767px){
@@ -214,4 +358,21 @@ button:focus {
 		font-size: 18px;
 	}
 
+	.fas.fa-chevron-right{
+		position: relative;
+		top: -104px;
+		left: -60px;
+	}
+	.perm_header_center.trans{
+	opacity: 0;
+	}
+	/*.main .perm_header .row .perm_header_left .name_a {
+		font-size: 18px;
+	}*/
+		.main .perm_header .perm_header_row{
+		visibility: hidden;
+	}
+	.main .perm_header .navigation{
+		visibility: visible;
+	}
 }
