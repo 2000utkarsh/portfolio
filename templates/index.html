@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/projects.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/style_1.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/projects_1.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -81,16 +81,16 @@
 
             <div class="tab_links trans">
               <div class="row">
-                <div class="col-3 tab_link_single trans" align="center" style="">
+                <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
                 <a class="js-open-main_tab_1" href="#"><button>Qualifications</button></a>
                 </div>
-                <div class="col-3 tab_link_single trans" align="center" style="">
+                <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
                 <a class="js-open-main_tab_2" href="#"><button>Expertise</button></a>
                 </div>
-                <div class="col-3 tab_link_single trans" align="center" style="">
+                <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
                 <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
                 </div>
-                <div class="col-3 tab_link_single trans" align="center" style="">
+                <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
                 <a class="js-open-main_tab_4" href="#"><button>Arbitrary</button></a>
                 </div>  
               </div>
@@ -108,17 +108,17 @@
         <div class="col-4" align="left" >
           <div class="footer_left">
             <div class="row">
-              <div class="col-1"></div>
+              <!-- <div class="col-1"></div> -->
               <div class="col-1">
-                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-skype"></i>
               </div>
-              <div class="col-1">
+              <div class="col-lg-1 col-sm-2">
                 <i class="fab fa-linkedin"></i>
               </div>
-              <div class="col-1">
+              <div class="col-lg-1 col-sm-2">
                 <i class="fab fa-twitter-square"></i>
               </div>
-              <div class="col-1">
+              <div class="col-lg-1 col-sm-2">
                 <i class="fab fa-github-square"></i>
               </div>
               <div class="col-7"></div>
@@ -127,14 +127,14 @@
         </div>
         <div class="col-4" align="center" >
           <div class="footer_center">
-            &copy; 2019
+            &copy; Harshdeep Singh
           </div>
         </div>
         <div class="col-4" align="right" >
           <div class="footer_right">
             <div class="row">
               <div class="col-11">
-                Contact: {{candidate.contact}}
+                Contact: <span class="contact">{{candidate.contact}}</span>
               </div>
               <div class="col-1">
               </div>
@@ -166,8 +166,8 @@
                 <div class="col-11 card">
                   {% include '_qualifications.html' %}
                 </div>
-                <!-- <div class="col-1">
-                </div> -->
+                <div class="col-1">
+                </div>
               </div>
             <!-- </div> -->
             {% endfor %}
@@ -268,7 +268,7 @@
         </div>
         <div class="col-8" align="center" >
           <div class="row">
-            <div class="col-4 card">
+            <!-- <div class="col-4 card">
               sample text
             </div>
             <div class="col-4 card">
@@ -276,7 +276,7 @@
             </div>
             <div class="col-4 card">
               sample text
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col-2" align="right" >
@@ -325,7 +325,7 @@
           items:2
         },
         1000: {
-          items: 3
+          items: 4
         }
       }
     });

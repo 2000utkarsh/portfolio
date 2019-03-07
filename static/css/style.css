@@ -3,7 +3,7 @@ html,body{
 	overflow-x: hidden;
 	overflow-y: auto;
 	color: #000;
-}
+} 
 
 
 a{
@@ -199,4 +199,19 @@ button:hover:before {
 }
 button:focus { 
 	outline: none; 
+}
+
+
+@media only screen and (max-width: 767px){
+	.main{
+		height: 1300px;
+		/*overflow-y: scroll;*/
+	}
+	.main .main_content{
+		height: 1000px;
+	}
+	.main .footer .footer_right .row .contact{
+		font-size: 18px;
+	}
+
 }
