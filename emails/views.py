@@ -6,8 +6,11 @@ from credentials import models as cre_models
 
 def sendEmail(request, receiver):
 	link = cre_models.Resume.objects.get(id__iexact=1).link
+	email_id = cre_models.Resume.objects.get(id__iexact=1).email_id
 	text = "This is my resume link\n" + str(link)
+	my_text = "Your link has been shared with " + str(receiver)
 	send_mail("Resume Link",text,'lug.tiet@yahoo.com',[receiver],fail_silently = False)
+	send_mail("Resume Viewed",my_text,'lug.tiet@yahoo.com',[email_id],fail_silently = False)
 	return redirect('credentials:index')
 
 def getReceiver(request):

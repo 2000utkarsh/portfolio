@@ -49,7 +49,7 @@
               <div class="col-lg-4 col-sm-1" >
               </div>
               <div class="col-lg-3 col-sm-4">
-                <a href="{% static 'resume_pdf/resume.pdf' %}" target="_blank"><button>Resume</button></a>
+                <a href="{{ candidate.resume_pdf.url }}" target="_blank"><button>Resume</button></a>
               </div>
               <div class="col-1">
               </div>
@@ -134,16 +134,16 @@
             <div class="row">
               <!-- <div class="col-1"></div> -->
               <div class="col-1">
-                <i class="fab fa-skype"></i>
+                <a href="{{candidate.skype}}" target="_blank"><i class="fab fa-skype"></i></a>
               </div>
               <div class="col-lg-1 col-sm-2">
-                <i class="fab fa-linkedin"></i>
+                <a href="{{candidate.linkedin}}" target="_blank"><i class="fab fa-linkedin"></i></a>
               </div>
               <div class="col-lg-1 col-sm-2">
-                <i class="fab fa-twitter-square"></i>
+                <a href="{{candidate.twitter}}" target="_blank"><i class="fab fa-twitter-square"></i></a>
               </div>
               <div class="col-lg-1 col-sm-2">
-                <i class="fab fa-github-square"></i>
+                <a href="{{candidate.github}}" target="_blank"><i class="fab fa-github-square"></i></a>
               </div>
               <div class="col-7"></div>
             </div>

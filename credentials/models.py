@@ -8,7 +8,13 @@ class Resume(models.Model):
 	name = models.CharField(max_length = 50)
 	about = models.TextField()
 	contact = models.IntegerField()
+	resume_pdf = models.FileField(upload_to = 'resume/')
+	email_id = models.EmailField()
 	link = models.URLField()
+	skype = models.URLField() 
+	twitter = models.URLField() 
+	github = models.URLField() 
+	linkedin = models.URLField() 
 
 	def __str__(self):
 		return self.name
@@ -19,6 +25,7 @@ class Resume(models.Model):
 class Qualification(models.Model):
 	candidate = models.ForeignKey('Resume',related_name='qualifications',on_delete=models.CASCADE)
 	name = models.CharField(max_length = 50)
+	field = models.CharField(max_length = 50)
 	institution = models.TextField()
 	year = models.PositiveIntegerField()
 	grade = models.CharField(max_length = 10)

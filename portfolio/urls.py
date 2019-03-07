@@ -19,6 +19,10 @@ from django.conf.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = 'HARSHDEEP ADMINISTRATION'
+admin.site.site_title = 'Harshdeep Administration'
+admin.site.index_title = 'Harshdeep Administration'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('credentials.urls', namespace = 'credentials')),
