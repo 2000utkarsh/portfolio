@@ -17,7 +17,7 @@ a{
 	background: #e5e2d3;
 }
 .main .perm_header .row{
-	height: 70px;
+	height: 90px;
 	/*margin-bottom: -70px; */
 }
 .main .perm_header .perm_header_row{
@@ -411,6 +411,11 @@ button:focus {
     font-size: 36px;
     z-index: 2000;
     color: #000;
+  }
+  .main .main_content .welcome_text{
+  padding-top: 140px;
+  margin-top: 50px;
+  font-size: 56px;
   }
 
 	/*.main .perm_header .row .perm_header_left .name_a {
