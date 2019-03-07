@@ -68,6 +68,7 @@
 
 
       <div class="navigation">
+        <a href="{% url 'credentials:index' %}" class="mobile_name"><span>{{candidate.name}}</span></a>
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
         <label for="navi-toggle" class="navigation__button">
@@ -338,7 +339,7 @@
   </div>
 
 
-  <div class="modal fade" id="formModal">
+  <div class="modal fade" data-backdrop="false" id="formModal">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
