@@ -134,32 +134,48 @@
         <div class="col-4" align="left" >
           <div class="footer_left">
             <div class="row">
-              <!-- <div class="col-1"></div> -->
-              <div class="col-1">
+              {% comment %}
+              <div class="col-1"></div>
+              <div class="col-lg-1 col-sm-5">
                 <a href="{{candidate.skype}}" target="_blank"><i class="fab fa-skype"></i></a>
               </div>
-              <div class="col-lg-1 col-sm-2">
-                <a href="{{candidate.linkedin}}" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <div class="col-lg-1 col-sm-5">
+                <a href="{{candidate_nameidate.linkedin}}" target="_blank"><i class="fab fa-linkedin"></i></a>
               </div>
-              <div class="col-lg-1 col-sm-2">
+              <div class="col-lg-1 col-sm-5">
                 <a href="{{candidate.twitter}}" target="_blank"><i class="fab fa-twitter-square"></i></a>
               </div>
-              <div class="col-lg-1 col-sm-2">
+              <div class="col-lg-1 col-sm-5">
                 <a href="{{candidate.github}}" target="_blank"><i class="fab fa-github-square"></i></a>
               </div>
               <div class="col-7"></div>
+              {% endcomment %}
+              
+
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.skype}}" target="_blank"><i class="fab fa-skype" style=""></i></a>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate_nameidate.linkedin}}" target="_blank"><i class="fab fa-linkedin" style=""></i></a>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.twitter}}" target="_blank"><i class="fab fa-twitter-square"></i></a>
+              </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.github}}" target="_blank"><i class="fab fa-github-square"></i></a>
+              </div>
+
             </div>
           </div>
         </div>
-        <div class="col-4" align="center" >
-          <div class="footer_center">
+        <div class="col-4">
+          <div class="footer_center" align="center">
             &copy; Harshdeep Singh
           </div>
         </div>
         <div class="col-4" align="right" >
           <div class="footer_right">
             <div class="row">
-              <div class="col-11">
+              <div class="col-11" align="center">
                 Contact: <span class="contact">{{candidate.contact}}</span>
               </div>
               <div class="col-1">
