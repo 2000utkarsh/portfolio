@@ -426,8 +426,8 @@ button:focus {
   }
 } */
 
-@media only screen and (max-width: 200px), (min-width:100px){
+/* @media only screen and (max-width: 200px), (min-width:100px){
   .main{
     background-color: green;
   }
-}
+} */
