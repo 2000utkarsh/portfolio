@@ -418,6 +418,7 @@ button:focus {
 @media (max-width: 480px) {
   .temp_1{
     background-color: red;
+    
   }
   .temp_2{
     background-color: green;
