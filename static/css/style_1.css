@@ -415,6 +415,17 @@ button:focus {
 
 @media (max-width: 576px) {
   .main {
+    background-color: green;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
     background-color: red;
+  }
+}
+@media (max-width: 320px) {
+  .main {
+    background-color: blue;
   }
 }
