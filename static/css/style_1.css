@@ -418,7 +418,7 @@ button:focus {
 @media (max-width: 480px) {
   .temp_1{
     background-color: red;
-    
+
   }
   .temp_2{
     background-color: green;
@@ -428,5 +428,8 @@ button:focus {
   }
   .temp_4{
     background-color: orange;
+  }
+  .footer .row .footer_left .row{
+    background-color: brown;
   }
 }
