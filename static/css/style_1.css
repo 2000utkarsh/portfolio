@@ -414,22 +414,11 @@ button:focus {
 }
 
 
-
-@media (max-width: 480px) {
+@media only screen and (max-width:576px){
   .temp_1{
-    background-color: red;
-
-  }
-  .temp_2{
-    background-color: green;
+    margin-right: 16px;
   }
   .temp_3{
-    background-color: blue;
-  }
-  .temp_4{
-    background-color: orange;
-  }
-  .footer .row .footer_left .row{
-    background-color: brown;
+    margin-right: 12px;
   }
 }
