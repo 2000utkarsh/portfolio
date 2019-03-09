@@ -13,12 +13,12 @@ a{
 /* FRONT PAGE STYLING */
 
 .main{
-	/*background: url('../images/main_back.jpg');*/
+	
 	background: #e5e2d3;
 }
 .main .perm_header .row{
 	height: 90px;
-	/*margin-bottom: -70px; */
+	
 }
 .main .perm_header .perm_header_row{
 	visibility: visible;
@@ -171,7 +171,7 @@ a{
 	position: absolute;
 	top: 70px;
 	width: 100%;
-	/*background: url('../images/tab_background.jpeg');*/
+	
 	background: #e5e2d3;
 	background-size: 1550px 722px;
 }
@@ -206,18 +206,7 @@ button {
   display: block;
 }
 
-/*button:before {
-  content:'';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 0px;
-  height: 48px;
-  background: rgba(255,255,255,0.3);
-  border-radius: 10px;
-  border: none;
-  transition: all 1s ease;
-}*/
+
 
 button:hover:before {
   width: 100%;
@@ -245,21 +234,11 @@ button:focus {
 }
 
 .navigation__button {
- /* background-color: #fff;
-  height: 7rem;
-  width: 7rem;
-  position: fixed;
-  top: 6rem;
-  right: 6rem;
-  border-radius: 50%;
-  z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  text-align: center;
-  cursor: pointer; */
+
   position: relative;
   top: -130px;
   z-index: 2000;
-  /*box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);*/
+  
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
@@ -379,7 +358,7 @@ button:focus {
 @media only screen and (max-width: 767px){
 	.main{
 		height: 1300px;
-		/*overflow-y: scroll;*/
+		
 	}
 	.main .main_content{
 		height: 1000px;
@@ -418,17 +397,15 @@ button:focus {
   font-size: 56px;
   }
 
-	/*.main .perm_header .row .perm_header_left .name_a {
-		font-size: 18px;
-	}*/
-		.main .perm_header .perm_header_row{
+
+	.main .perm_header .perm_header_row{
 		visibility: hidden;
 	}
 	.main .perm_header .navigation .navigation__button{
 		visibility: visible;
 	}
 	.main .main_content .main_content_row{
-	/*height: 652px;*/
+	
 	margin-top: -280px;
 	}
 }

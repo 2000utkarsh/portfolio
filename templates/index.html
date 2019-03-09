@@ -5,14 +5,16 @@
 <head>
   <title>PORTFOLIO</title>
 
-  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
 
   <link rel="stylesheet" type="text/css" href="{% static 'OwlCarousel2-2.3.4/dist/assets/owl.carousel.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css' %}">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static 'css/projects_1.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'css/style_1.css' %}">
@@ -24,31 +26,32 @@
     <div class="perm_header" align="right">
 
       <div class="row perm_header_row">
-        <div class="col-lg-3 col-sm-6" align="left" >
-          <div class="perm_header_left"><a href="{% url 'credentials:index' %}" class="name_a">{{candidate.name}}</a></div>
+        <div class="col-lg-3 col-sm-6" align="left">
+          <div class="perm_header_left"><a href="{% url 'credentials:index' %}" class="name_a">{{candidate.name}}</a>
+          </div>
         </div>
-        <div class="col-lg-6 col-sm-0" align="center" >
+        <div class="col-lg-6 col-sm-0" align="center">
           <div class="perm_header_center trans">
             <div class="row">
               <div class="col-3" align="center" style="">
-              <a class="js-open-main_tab_1" href="#"><button>Qualifications</button></a>
+                <a class="js-open-main_tab_1" href="#"><button>Qualifications</button></a>
               </div>
               <div class="col-3" align="center" style="">
-              <a class="js-open-main_tab_2" href="#"><button>Expertise</button></a>
+                <a class="js-open-main_tab_2" href="#"><button>Expertise</button></a>
               </div>
               <div class="col-3" align="center" style="">
-              <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
+                <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
               </div>
               <div class="col-3" align="center" style="">
-              <a class="js-open-main_tab_4" href="#"><button>Vision</button></a>
-              </div>  
+                <a class="js-open-main_tab_4" href="#"><button>Vision</button></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-sm-6" align="right" >
+        <div class="col-lg-3 col-sm-6" align="right">
           <div class="perm_header_right">
             <div class="row">
-              <div class="col-lg-4 col-sm-1" >
+              <div class="col-lg-4 col-sm-1">
               </div>
               <div class="col-lg-3 col-sm-4">
                 <a href="{{ candidate.resume_pdf.url }}" target="_blank"><button>Resume</button></a>
@@ -79,12 +82,18 @@
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_1" style="display: none;">Qualifications</a></li>
-            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_2" style="display: none;">Expertise</a></li>
-            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_3" style="display: none;">Projects</a></li>
-            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_4" style="display: none;">Vision & Mission</a></li>
-            <li class="navigation__item"><a href="{% static 'resume_pdf/resume.pdf' %}" onclick="close_btn()" target="_blank" class="navigation__link resume__link" style="display: none;">Resume</a></li>
-            <li class="navigation__item"><a href="{% url 'emails:getReceiver' %}" onclick="close_btn()" class="navigation__link drive__link" style="display: none;">Drive Link</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_1"
+                style="display: none;">Qualifications</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_2"
+                style="display: none;">Expertise</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_3"
+                style="display: none;">Projects</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_4"
+                style="display: none;">Vision & Mission</a></li>
+            <li class="navigation__item"><a href="{% static 'resume_pdf/resume.pdf' %}" onclick="close_btn()"
+                target="_blank" class="navigation__link resume__link" style="display: none;">Resume</a></li>
+            <li class="navigation__item"><a href="{% url 'emails:getReceiver' %}" onclick="close_btn()"
+                class="navigation__link drive__link" style="display: none;">Drive Link</a></li>
 
           </ul>
         </nav>
@@ -95,35 +104,35 @@
     <center>
       <div class="main_content">
         <div class="row main_content_row">
-          <div class="col-2" align="left" >
+          <div class="col-2" align="left">
           </div>
           <div class="col-8" align="center">
-            
+
             <div class="welcome_text row">
               <div class="col-12">
                 <center>Welcome To My Portfolio!!</center>
                 <button data-toggle="modal" data-target="#formModal" id="modalButton" hidden></button>
-              </div>            
+              </div>
             </div>
 
             <div class="tab_links trans">
               <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
-                <a class="js-open-main_tab_1" href="#"><button>Qualifications</button></a>
+                  <a class="js-open-main_tab_1" href="#"><button>Qualifications</button></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
-                <a class="js-open-main_tab_2" href="#"><button>Expertise</button></a>
+                  <a class="js-open-main_tab_2" href="#"><button>Expertise</button></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
-                <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
+                  <a class="js-open-main_tab_3" href="#"><button>Projects</button></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 tab_link_single trans" align="center" style="">
-                <a class="js-open-main_tab_4" href="#"><button>Vision</button></a>
-                </div>  
+                  <a class="js-open-main_tab_4" href="#"><button>Vision</button></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-2" align="right" >
+          <div class="col-2" align="right">
           </div>
         </div>
       </div>
@@ -132,37 +141,25 @@
 
     <div class="footer">
       <div class="row">
-        <div class="col-4" align="left" >
+        <div class="col-4" align="left">
           <div class="footer_left">
             <div class="row">
-              {% comment %}
-              <div class="col-1"></div>
-              <div class="col-lg-1 col-sm-5">
-                <a href="{{candidate.skype}}" target="_blank"><i class="fab fa-skype"></i></a>
-              </div>
-              <div class="col-lg-1 col-sm-5">
-                <a href="{{candidate_nameidate.linkedin}}" target="_blank"><i class="fab fa-linkedin"></i></a>
-              </div>
-              <div class="col-lg-1 col-sm-5">
-                <a href="{{candidate.twitter}}" target="_blank"><i class="fab fa-twitter-square"></i></a>
-              </div>
-              <div class="col-lg-1 col-sm-5">
-                <a href="{{candidate.github}}" target="_blank"><i class="fab fa-github-square"></i></a>
-              </div>
-              <div class="col-7"></div>
-              {% endcomment %}
-              
 
-              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.skype}}" target="_blank"><i class="fab fa-skype" style=""></i></a>
+
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.skype}}"
+                  target="_blank"><i class="fab fa-skype" style=""></i></a>
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate_nameidate.linkedin}}" target="_blank"><i class="fab fa-linkedin" style=""></i></a>
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.linkedin}}"
+                  target="_blank"><i class="fab fa-linkedin" style=""></i></a>
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.twitter}}"
+                  target="_blank"><i class="fab fa-twitter-square"></i></a>
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.github}}" target="_blank"><i class="fab fa-github-square"></i></a>
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.github}}"
+                  target="_blank"><i class="fab fa-github-square"></i></a>
               </div>
 
             </div>
@@ -173,7 +170,7 @@
             &copy; Harshdeep Singh
           </div>
         </div>
-        <div class="col-4" align="right" >
+        <div class="col-4" align="right">
           <div class="footer_right">
             <div class="row">
               <div class="col-11" align="center">
@@ -185,40 +182,36 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
 
   <div class="all_tabs main_tab_1">
     <div class="tab_1_header">
       <div class="row">
-        <div class="col-12" align="center" >
+        <div class="col-12" align="center">
           <div class="tab_1_text">QUALIFICATIONS</div>
-        </div>        
+        </div>
       </div>
     </div>
 
     <div class="tab_1_content">
       <div class="row row_tab_content">
-        <div class="col-2" align="left" >
+        <div class="col-2" align="left">
         </div>
-        <div class="col-8" align="center" > 
+        <div class="col-8" align="center">
           <div class="row owl-carousel owl-theme">
             {% for qual in qualifications %}
-            <!-- <div class="col-lg-4 col-md-6 col-xs-12"> -->
-              <!-- <div class="row item_row"> -->
-                <div class="col-12 card">
-                  {% include '_qualifications.html' %}
-                </div>
-               <!--  <div class="col-1">
-                </div> -->
-              <!-- </div> -->
-            <!-- </div> -->
+            
+            <div class="col-12 card">
+              {% include '_qualifications.html' %}
+            </div>
+            
             {% endfor %}
           </div>
         </div>
-        <div class="col-2" align="right" >
+        <div class="col-2" align="right">
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -227,35 +220,31 @@
   <div class="all_tabs main_tab_2">
     <div class="tab_2_header">
       <div class="row">
-        <div class="col-12" align="center" >
+        <div class="col-12" align="center">
           <div class="tab_2_text">EXPERTISE</div>
-        </div>        
+        </div>
       </div>
     </div>
 
     <div class="tab_2_content">
       <div class="row row_tab_content">
-        <div class="col-2" align="left" >
+        <div class="col-2" align="left">
         </div>
-        <div class="col-8" align="center" >
+        <div class="col-8" align="center">
           <div class="row owl-carousel owl-theme">
             {% for exp in expertise %}
-            <!-- <div class="col-lg-4 col-md-6 col-xs-12"> -->
-              <!-- <div class="row item_row"> -->
-                <!-- <div class="col-1">
-                </div> -->
-                <div class="col-12 card item">
-                  {% include '_expertise.html' %}
-                </div>
-                
-              <!-- </div> -->
-            <!-- </div> -->
+           
+            <div class="col-12 card item">
+              {% include '_expertise.html' %}
+            </div>
+
+           
             {% endfor %}
           </div>
         </div>
-        <div class="col-2" align="right" >
+        <div class="col-2" align="right">
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -264,34 +253,30 @@
   <div class="all_tabs main_tab_3">
     <div class="tab_3_header">
       <div class="row">
-        <div class="col-12" align="center" >
+        <div class="col-12" align="center">
           <div class="tab_3_text">PROJECTS</div>
-        </div>        
+        </div>
       </div>
     </div>
 
     <div class="tab_3_content">
       <div class="row row_tab_content">
-        <div class="col-2" align="left" >
+        <div class="col-2" align="left">
         </div>
-        <div class="col-8" align="center" >
+        <div class="col-8" align="center">
           <div class="row owl-carousel owl-theme">
-              {% for pro in projects %}     
-              <!-- <div class="col-lg-4 col-md-6 col-xs-12"> -->
-                <!-- <div class="row item_row"> -->
-                  <div class="col-12 card item">
-                    {% include '_projects.html' %}
-                  </div>
-                  <!-- <div class="col-1">
-                  </div> -->
-                <!-- </div> -->
-              <!-- </div> -->
-              {% endfor %}
+            {% for pro in projects %}
+            
+            <div class="col-12 card item">
+              {% include '_projects.html' %}
+            </div>
+          
+            {% endfor %}
           </div>
         </div>
-        <div class="col-2" align="right" >
+        <div class="col-2" align="right">
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -300,9 +285,9 @@
   <div class="all_tabs main_tab_4">
     <div class="tab_4_header">
       <div class="row">
-        <div class="col-12" align="center" >
-          <!-- <div class="tab_4_text">Vision</div> -->
-        </div>        
+        <div class="col-12" align="center">
+          
+        </div>
       </div>
     </div>
 
@@ -311,46 +296,35 @@
         <div class="col-1"></div>
         <div class="col-lg-5 col-sm-10 left_section" align="center">
           <strong> Vision</strong>
-          <p class="lead" style="text-align: justify; padding: 40px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  
-     
+          <p class="lead" style="text-align: justify; padding: 40px">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+
+
           </p>
         </div>
-        <!-- <div class="col-8" align="center" > -->
-          <!-- <div class="row"> -->
-            <!-- <div class="col-4 card">
-              sample text
-            </div>
-            <div class="col-4 card">
-              sample text
-            </div>
-            <div class="col-4 card">
-              sample text
-            </div> -->
-          <!-- </div> -->
-        <!-- </div> -->
         <div class="col-lg-5 col-sm-10 right_section" align="center">
           <strong>Mission</strong>
-          <p class="lead" style="text-align: justify; padding: 40px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         
+          <p class="lead" style="text-align: justify; padding: 40px">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
           </p>
         </div>
         <div class="col-1"></div>
 
-        
+
       </div>
     </div>
   </div>
@@ -383,16 +357,16 @@
   <script type="text/javascript" src="{% static 'OwlCarousel2-2.3.4/dist/owl.carousel.js' %}"></script>
   <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      navText: ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
-      responsive:{
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
         0: {
           items: 1
         },
         600: {
-          items:2
+          items: 2
         },
         1000: {
           items: 4
@@ -400,451 +374,19 @@
       }
     });
   </script>
-  <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+  <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="{% static 'js/index_1.js' %}"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% comment %}
-
-
-<!DOCTYPE html>
-{% load staticfiles %}
-{% load list_index %}
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-	<title>{{candidate.name}} - Portfolio Page</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Dosis:400,700|Raleway:400,700">
-
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
-	<!-- <link rel='stylesheet' href='https://www.vinaypuppal.com/css/Pe-icon-7-stroke.css'> -->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/projects_1.css' %}">
- 
-</head>
-
-<body>
-
-  <div class="overlay" id="particles">
-  </div>
-
-  {% block content %}
-  {% endblock %}
-
-
-
-  <div class="home container">
-    <header>
-      <div class="left">
-        <a href="{% url 'credentials:index' %}">{{candidate.name}}</a>
-      </div>
-      <div class="center">
-        <ul>
-          <li><a class='js-open-about' href="#">Qualifications</a></li>
-          <li><a class='js-open-works' href="#">Expertise</a></li>
-          <li><a class='js-open-contact' href="#">Projects</a></li>
-          <li><a class='js-open-link' href="#">Link</a></li>
-          <li><a class='' href="{% static 'resume_pdf/resume.pdf' %}" target="_blank">Resume</a></li>
-          <li><a class='' href="{% url 'emails:getReceiver' %}" target="_blank">Drive Link</a></li>
-        </ul>
-      </div>
-      <div class="right">
-        <ul>
-          <li>
-            <a class='facebook tooltip' title='Facebook'target="_blank" href="">
-              <i class='fa fa-google-plus'></i>
-            </a>
-          </li>
-          <li>
-            <a class='twitter tooltip' title='Twitter'target="_blank" href="">
-              <i class='fa fa-skype'></i>
-            </a>
-          </li>
-          <li>
-            <a class='linkedin tooltip' title='LinkedIn'target="_blank" href="">
-              <i class='fa fa-linkedin'></i>
-            </a>
-          </li>  
-        </ul>
-      </div>
-    </header>
-
-
-    <div class="content">
-      <div class="title">
-        <h1>Welcome to My Portfolio!</h1>
-      </div>
-      <ul>
-        <li>
-          <a class='js-open-about' href="#">
-            <i class='pe-7s-user'></i>
-            <span>Qualifications</span>
-          </a>
-        </li>
-        <li>
-          <a class='js-open-works' href="#">
-            <i class='pe-7s-albums'></i>
-            <span>Expertise</span>
-          </a>
-        </li>
-        <li>
-          <a class='js-open-contact' href="#">
-            <i class='pe-7s-chat'></i>
-            <span>Projects</span>
-          </a>
-        </li>
-        <li>
-          <a class='js-open-link' href="#">
-            <i class='pe-7s-chat'></i>
-            <span>Link</span>
-          </a>
-        </li>
-        <li>
-          <a class='' href="{% static 'resume_pdf/resume.pdf' %}" target="_blank">
-            <i class='pe-7s-chat'></i>
-            <span>Resume</span>
-          </a>
-        </li>
-        <li>
-          <a class="" href="{% url 'emails:getReceiver' %}" target="_blank">
-            <i class='pe-7s-chat'></i>
-            <span>Drive Link</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-
-
-    <footer>
-      <p> {{candidate.name}} &copy; 2019</p>
-      <p> Contact: {{candidate.contact}}</p>
-    </footer>
-  </div>
-
-
-
-  <div class="about container">
-    <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i></a>
-    <div class="top">
-      <div class="left">
-        <div class="avatar">
-          <img src="{% static 'profile_pic/pic.jpg' %}" alt="avatar" />
-        </div>
-        
-        <table>
-          {% for qual in qualifications %}
-            <tr>	                
-              <td>
-                <span class="key_tags">{{qual.name}}</span></td>:<td><a href="{{qual.link}}" target="_blank" class="key_links">Click Here</a></td>
-    		    </tr>   
-          {% endfor %}
-  		  </table>
-      </div>
-      <div class="intro right">
-        <h1>A Little About Me</h1>
-        <p>
-          {{candidate.about}}
-        </p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="works container">
-    <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i>
-    </a>
-    <div class="header">
-      <h1 class="expertise">Expertise</h1>
-      	<ul class="ul_list_items">
-  	    {% for exp in expertise %}
-  	        <li class="list_items">
-  	            <p>
-  	                {{exp.message}}
-  	            </p>
-  	        </li>
-  	        
-        	{% endfor %}
-  	</ul>
-     
-    </div>
-  </div>
-
-
-
-<div class="overlay_projects">
-  <div class="contact container">
-    <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i></a>
-    <div class="content">
-      <div class="left">
-        <h1 class="project_heading">Projects</h1>
-
-      
-        <div class="master_container">
-          <div class="container_card_outer">
-              <section id="portfolio_card">
-                  <div class="container_card_inner">
-
-                    <center>
-                      {% for outer_counter in projects_count %}
-                      <div class="bundle_three">
-                        {% for inner_counter in three %}
-                          {% include '_projects.html' %}  
-                          {% endfor %}
-                      </div>
-                        {% endfor %}
-                    </center>
-
-                     
-
-                      <div class="bundle_residue">
-                      {% for counter in projects_residue %}
-                          {% include '_projects.html' %}  
-                      {% endfor %}
-                      </div>
-
-                  </div>
-              </section>
-          </div>
-        </div>
-
-
-
-      </div>
-    </div>
-    <footer>
-      <p> {{candidate.about}} &copy; 2019</p>
-    </footer>
-  </div>
-</div>
-
-  <div class="link container">
-    <a class='js-close close-arrow' href="#"><i class='pe-7s-angle-down'></i></a>
-    <div class="header_link">
-      <h1>Link</h1>
-    </div>
-  </div>
-
-  <div class="backstreach" id="backstreach">
-  </div>
-
-
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/3.2.3/sweetalert2.min.js'></script>
-  <script src="{% static 'js/index.js' %}"></script>
-</body>
-
-</html>
-
-{% endcomment %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% comment %}
-
-<!-- <!DOCTYPE html>
-{% load staticfiles %}
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-
-	{% block content %}
-
-	<p>Name: {{candidate_name}}</p>
-	<p>About him: {{candidate_about}}</p>
-	<img src="{% static 'profile_pic/zlogo.jpg' %}" alt="profile_pic">
-	<br>
-	<a href="{% static 'resume_pdf/resume.pdf' %}" target="_blank">Resume</a>
-	<br>
-	<a href="{% url 'emails:getReceiver' %}" target="_blank">Get Link</a>
-
-	<h3>Qualifications</h3>
-
-	<ul>
-	    {% for key,value in qualifications_dict.items %}
-	        <li>
-	            <p>
-	                {{key}}:<a href="{{value}}" target="_blank">Click Here</a>
-	            </p>
-	        </li>
-	        
-      	{% endfor %}
-	</ul>
-
-
-	<h3>Projects</h3>
-
-	<ul>
-	    {% for key,value in projects_dict.items %}
-	        <li>
-	            <p>
-	                {{key}}:<a href="{{value}}" target="_blank">Click Here</a>
-	            </p>
-	        </li>
-	        
-      	{% endfor %}
-	</ul>
-
-
-	<h3>Expertise</h3>
-
-	<ul>
-	    {% for exp in expertise_list %}
-	        <li>
-	            <p>
-	                {{exp}}
-	            </p>
-	        </li>
-	        
-      	{% endfor %}
-	</ul>
-
-	
-	<p>Contact: {{candidate_contact}}</p>
-
-
-	{% endblock  %}
-</body>
-</html> -->
-
-{% endcomment %}
-

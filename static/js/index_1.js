@@ -10,17 +10,6 @@ $(document).ready(function(){
 		});
 	}
 
-	// function hasOpenClass(){
-	// 	$('.all_tabs').each(function(i,el){
-	// 		if ($(el).hasClass('open')) {
-
-	// 			return 1;
-	// 		}
-	// 		else{
-	// 			return 0;
-	// 		}
-	// 	});
-	// }
 
 	function hasOpenClass() {
 		var tabs = document.querySelectorAll('.all_tabs');
