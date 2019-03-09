@@ -4,9 +4,9 @@ from . import models
 
 
 def index(request):
-	candidate = models.Resume.objects.get(id__iexact = 1)
-	qualifications = models.Qualification.objects.all().filter(candidate__id__iexact = 1)
-	projects = models.Project.objects.all().filter(candidate__id__iexact = 1)
+	candidate = models.Resume.objects.get(id__exact = 1)
+	qualifications = models.Qualification.objects.all().filter(candidate__id__exact = 1)
+	projects = models.Project.objects.all().filter(candidate__id__exact = 1)
 	projects_list=[]
 	for pro in projects:
 		projects_dict={}
@@ -17,7 +17,7 @@ def index(request):
 		projects_list.append(projects_dict)
 
 
-	expertise = models.Expertise.objects.all().filter(candidate__id__iexact = 1)
+	expertise = models.Expertise.objects.all().filter(candidate__id__exact = 1)
 
 	return render(request, 'index.html', {	'candidate':candidate,  
 											'qualifications':qualifications, 
