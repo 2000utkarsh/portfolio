@@ -414,7 +414,7 @@ button:focus {
 }
 
 
-@media only screen and (max-width:440px){
+/* @media only screen and (max-width:479px){
   .main{
     background-color: blue;
   }
@@ -424,9 +424,9 @@ button:focus {
   .temp_3{
     margin-right: 12px;
   }
-}
+} */
 
-@media only screen and (max-width:480px), (min-width:440px){
+@media only screen and (max-width: 400px), (min-width:200px){
   .main{
     background-color: green;
   }
