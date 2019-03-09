@@ -127,14 +127,14 @@ function appearModal(){
 }
 
 function close_btn(){
-	console.log('hghnhbh');
+	
 	document.querySelector('.navigation__button').click();
 	count-= 2;
-	console.log(count);
+	
 }
 
 function burgerClick() {
-	console.log('Working!!');
+	
 	$(".navigation__link.js-open-main_tab_1").css("display", "block");
 	$(".navigation__link.js-open-main_tab_2").css("display", "block");
 	$(".navigation__link.js-open-main_tab_3").css("display", "block");
@@ -144,7 +144,7 @@ function burgerClick() {
 }
 
 function burgerClickClose() {
-	console.log('Working!!');
+	
 	$(".navigation__link.js-open-main_tab_1").css("display", "none");
 	$(".navigation__link.js-open-main_tab_2").css("display", "none");
 	$(".navigation__link.js-open-main_tab_3").css("display", "none");
@@ -155,7 +155,7 @@ function burgerClickClose() {
 
 function clickCount() {
 	count+= 1;
-	console.log(count);
+	
 	if (count%2==1) {
 		burgerClick();
 		
