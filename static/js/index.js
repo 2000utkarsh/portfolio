@@ -128,5 +128,4 @@ function appearModal(){
 function close_btn(){
 	console.log('cbeubcubcu');
 	document.querySelector('.navigation__button').click();
-
 }

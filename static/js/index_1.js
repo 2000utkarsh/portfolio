@@ -126,6 +126,11 @@ function appearModal(){
 }
 
 function close_btn(){
+	console.log('cbeubcubcu');
 	document.querySelector('.navigation__button').click();
+	document.querySelector('.navigation__link js-open-main_tab_1').style.visibility = 'hidden';
+	document.querySelector('.navigation__link js-open-main_tab_2').style.visibility = 'hidden';
+	document.querySelector('.navigation__link js-open-main_tab_3').style.visibility = 'hidden';
+	document.querySelector('.navigation__link js-open-main_tab_4').style.visibility = 'hidden';
 
 }
