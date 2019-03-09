@@ -414,7 +414,7 @@ button:focus {
 }
 
 
-@media only screen and (max-width:470px){
+@media only screen and (max-width:440px){
   .main{
     background-color: blue;
   }
@@ -426,7 +426,7 @@ button:focus {
   }
 }
 
-@media only screen and (max-width:480px){
+@media only screen and (max-width:480px), (min-width:440px){
   .main{
     background-color: green;
   }
