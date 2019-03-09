@@ -251,9 +251,9 @@ button:focus {
   width: 40px;
   border-radius: 50%;
   position: relative;
-  top: -3000px;
-  
+  top: -300px;
   background: #e5e2d3;
+  /*background: red;*/
   z-index: 1000;
   transition: transform 0s cubic-bezier(0.86, 0, 0.07, 1); 
 }
