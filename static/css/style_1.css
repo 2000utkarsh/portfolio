@@ -431,3 +431,12 @@ button:focus {
     background-color: green;
   }
 } */
+
+
+@media screen and (orientation:landscape) {
+  body {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+  }
+}
