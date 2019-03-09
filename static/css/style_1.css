@@ -250,8 +250,9 @@ button:focus {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  position: relative;
-  top: -130px;
+  position: absolute;
+  top: -200px;
+  left: -200px;
   background: #e5e2d3;
   z-index: 1000;
   transition: transform 0s cubic-bezier(0.86, 0, 0.07, 1); 
@@ -274,7 +275,8 @@ button:focus {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  padding-left: 0px; }
 
 .navigation__item {
   margin: 1rem; }
@@ -410,6 +412,11 @@ button:focus {
   }
  .navigation .mobile_name{
    font-size: 28px;
+ }
+
+ .copyright_name{
+   padding-left: 0;
+   margin-left: 0; 
  }
 }
 

@@ -4,8 +4,8 @@ var count = 0;
 
 $(document).ready(function(){
 
-var orientation = $('body').css('display');
-console.log(orientation);
+
+
 	function removeOpenClass(){
 		$('.all_tabs').each(function(i,el){
 			if ($(el).hasClass('open')) {

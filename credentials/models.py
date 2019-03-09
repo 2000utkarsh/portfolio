@@ -7,7 +7,7 @@ class Resume(models.Model):
 	id = models.PositiveIntegerField(blank=False, primary_key = True)
 	name = models.CharField(max_length = 50)
 	about = models.TextField()
-	contact = models.IntegerField()
+	contact = models.BigIntegerField()
 	resume_pdf = models.FileField(upload_to = 'resume/')
 	email_id = models.EmailField()
 	link = models.URLField()
