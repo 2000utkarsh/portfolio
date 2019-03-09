@@ -253,6 +253,7 @@ button:focus {
   position: relative;
   top: -300px;
   background: #e5e2d3;
+  /*background: red;*/
   z-index: 1000;
   transition: transform 0s cubic-bezier(0.86, 0, 0.07, 1); 
 }
@@ -365,7 +366,7 @@ button:focus {
 		height: 1000px;
 	}
 	.main .footer .footer_right .row .contact{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.fas.fa-chevron-right{
