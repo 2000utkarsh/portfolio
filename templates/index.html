@@ -71,19 +71,19 @@
         <a href="{% url 'credentials:index' %}" class="mobile_name"><span>{{candidate.name}}</span></a>
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-        <label for="navi-toggle" class="navigation__button">
+        <label for="navi-toggle" class="navigation__button" onclick="clickCount()">
           <span class="navigation__icon">&nbsp;</span>
         </label>
 
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_1">Qualifications</a></li>
-            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_2">Expertise</a></li>
-            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_3">Projects</a></li>
-            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_4">Vision & Mission</a></li>
-            <li class="navigation__item"><a href="{% static 'resume_pdf/resume.pdf' %}" onclick="close_btn()" target="_blank" class="navigation__link">Resume</a></li>
-            <li class="navigation__item"><a href="{% url 'emails:getReceiver' %}" onclick="close_btn()" class="navigation__link">Drive Link</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_1" style="display: none;">Qualifications</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_2" style="display: none;">Expertise</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_3" style="display: none;">Projects</a></li>
+            <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_4" style="display: none;">Vision & Mission</a></li>
+            <li class="navigation__item"><a href="{% static 'resume_pdf/resume.pdf' %}" onclick="close_btn()" target="_blank" class="navigation__link resume__link" style="display: none;">Resume</a></li>
+            <li class="navigation__item"><a href="{% url 'emails:getReceiver' %}" onclick="close_btn()" class="navigation__link drive__link" style="display: none;">Drive Link</a></li>
 
           </ul>
         </nav>
@@ -158,7 +158,7 @@
               <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate_nameidate.linkedin}}" target="_blank"><i class="fab fa-linkedin" style=""></i></a>
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.twitter}}" target="_blank"><i class="fab fa-twitter-square"></i></a>
+              <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.twitter}}" target="_blank"><i class="fab fa-twitter"></i></a>
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <div class="col-xs-3" style="margin-left: 0; padding-left: 0;"><a href="{{candidate.github}}" target="_blank"><i class="fab fa-github-square"></i></a>
@@ -404,7 +404,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-  <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/index_1.js' %}"></script>
 </body>
 
 </html>

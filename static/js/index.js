@@ -126,6 +126,6 @@ function appearModal(){
 }
 
 function close_btn(){
-	console.log('cbeubcubcu');
+	console.log('hghnhbh');
 	document.querySelector('.navigation__button').click();
 }
