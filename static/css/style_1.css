@@ -366,7 +366,7 @@ button:focus {
 		height: 1000px;
 	}
 	.main .footer .footer_right .row .contact{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.fas.fa-chevron-right{
@@ -415,8 +415,10 @@ button:focus {
  }
 
  .copyright_name{
-   padding-left: 0;
    margin-left: 0; 
+ }
+ .footer_center{
+  font-size: 21px !important;
  }
 }
 
