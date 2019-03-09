@@ -24,7 +24,7 @@ admin.site.site_title = 'Harshdeep Administration'
 admin.site.index_title = 'Harshdeep Administration'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('hdsadmin/', admin.site.urls),
     path('',include('credentials.urls', namespace = 'credentials')),
     path('',include('emails.urls', namespace = 'emails')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
