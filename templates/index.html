@@ -90,7 +90,7 @@
                 style="display: none;">Projects</a></li>
             <li class="navigation__item"><a href="#" onclick="close_btn()" class="navigation__link js-open-main_tab_4"
                 style="display: none;">Vision & Mission</a></li>
-            <li class="navigation__item"><a href="{% static 'resume_pdf/resume.pdf' %}" onclick="close_btn()"
+            <li class="navigation__item"><a href="{{ candidate.resume_pdf.url }}" onclick="close_btn()"
                 target="_blank" class="navigation__link resume__link" style="display: none;">Resume</a></li>
             <li class="navigation__item"><a href="{% url 'emails:getReceiver' %}" onclick="close_btn()"
                 class="navigation__link drive__link" style="display: none;">Drive Link</a></li>
