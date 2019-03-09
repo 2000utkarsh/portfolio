@@ -401,6 +401,9 @@ button:focus {
   margin-top: 50px;
   font-size: 56px;
   }
+  .welcome_span{
+    font-size: 56px;
+  }
 
 
 	.main .perm_header .perm_header_row{
