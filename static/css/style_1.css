@@ -407,5 +407,8 @@ button:focus {
 	.main .main_content .main_content_row{
 	
 	margin-top: -280px;
-	}
+  }
+ .navigation .mobile_name{
+   font-size: 28px;
+ }
 }
