@@ -1,4 +1,4 @@
-import django_heroku
+
 import os 
 
 
@@ -135,4 +135,3 @@ EMAIL_USE_SSL = True
 EMAIL_HOST_PASSWORD = 'password@LUG2019'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-django_heroku.settings(locals())
